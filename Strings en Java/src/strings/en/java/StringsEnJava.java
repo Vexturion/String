@@ -54,7 +54,10 @@ public class StringsEnJava {
     String precio="";
     precio= String.format("%.2f",decimal); // donde "%.nf" determina la cantidad de numeros que queremos ver despues del punto
     System.out.println(precio);
-    System.out.println
+    
+    // asi creariamos un string con formato si solo quisieramos imprimirlo
+    float precio2= 589.50f;
+    System.out.printf("El total de %d articulos es %.2f %s", 3, precio2, "pesos"); //usaremos %d para numeros enteros y %s para strings
     
     
     }
