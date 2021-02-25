@@ -59,6 +59,24 @@ public class StringsEnJava {
     float precio2= 589.50f;
     System.out.printf("El total de %d articulos es %.2f %s", 3, precio2, "pesos"); //usaremos %d para numeros enteros y %s para strings
     
+    // comparar cadenas
+    String cadena1= "Hola";
+    String cadena2= "Hola";
+    boolean comparacion= cadena2.equals(cadena1); // el metodo equals nos permite comprobar que dos strings sean iguales y deberan ser EXACTAMENTE iguales
+    System.out.println(comparacion);
+   boolean comparacion2= cadena2.toUpperCase().equals(cadena1.toUpperCase()); // volvemos todas las letras mayusculas para comprobar si el texto es igual 
+    boolean comparacion3= cadena1.equalsIgnoreCase(cadena2); // con equalsIgnoreCase comprobara si los string son iguales ignorando mayusculas y minusculas
+    System.out.println(comparacion3);
+    
+    // concatenar mas de dos strings (el metodo concat solo puede sumar DOS strings)
+    String saludo= cadena1.concat(cadena2);
+    System.out.println(saludo);
+    // si queremos sumar mas podemos hacerlo de la siguiente manera
+    String nombre= "Pepe";
+    String saludo2= "Muy buenas tardes";
+    String finSaludo= "Espero que estes muy bien";
+    String mensaje4= saludo2 +" " + nombre + " " + finSaludo ; // al sumar strings no se agregaran espacios
+    System.out.println(mensaje4);
     
     }
     
